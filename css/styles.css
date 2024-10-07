@@ -1,0 +1,80 @@
+@import url(./reset.css);
+
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #fff;
+  --text-preset-1: 800 24px/150% "Figtree-extra-bold", sans-serif;
+  --text-preset-2: 500 16px/150% "Figtree-semi-bold", sans-serif;
+  --text-preset-3: 500 14px/150% "Figtree-semi-bold", sans-serif;
+  --text-preset-4: 800 14px/150% "Figtree-extra-bold", sans-serif;
+}
+
+@font-face {
+  font-family: "Figtree-extra-bold";
+  src: url(../fonts/Figtree-ExtraBold.ttf);
+  font-family: "Figtree-semi-bold";
+  src: url(../fonts/Figtree-SemiBold.ttf);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 38.4rem;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 2.4rem;
+  border-radius: 2rem;
+  border: 1px solid var(--color-gray-950, #111);
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+.card .imagem-top {
+  border-radius: 1rem;
+  margin-bottom: 24px;
+}
+
+.card .text a {
+  border-radius: 0.4rem;
+  background-color: var(--yellow);
+  padding: 0.4rem 1.2rem;
+  color: var(--gray-950);
+  font: var(--text-preset-4);
+  margin-bottom: 1.2rem;
+}
+
+.card .text h2 {
+  color: var(--gray-950);
+  font: var(--text-preset-3);
+  margin-bottom: 1.2rem;
+}
+
+.card .text h1 {
+  color: var(--gray-950);
+  font: var(--text-preset-1);
+  margin-bottom: 1.2rem;
+}
+
+.card .text p {
+  color: var(--gray-500);
+  font: var(--text-preset-2);
+}
+
+.card .text .avatar {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+
+.card .text .avatar h3 {
+  color: var(--gray-950);
+  font: var(--text-preset-4);
+}
